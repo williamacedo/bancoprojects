@@ -1,0 +1,22 @@
+create database anuncio_db;
+
+create table Categorias(idCategoria int primary key auto_increment,
+descricao varchar(50) not null unique) engine = InnoDB default
+ charset=utf-8;
+
+create table Clientes(id_cliente int primary key auto_increment, nome varchar(255),
+nome varchar(255) not null, email varchar(255) not null unique,
+telefone varchar(20))
+engine = InnoDB default charset=uft-8;
+
+create table Classificados(id_classificado int primary key auto_increment,
+anuncio varchar(255) not null, preco decimal(10,2), id_cliente int not null,
+foreign key(id_categoria) references categorias(id_categoria),
+foreign key)
+
+insert into Categorias(id_categoria, descricao)
+  values (1, "Veiculo"),
+          (2, "Imoveis");
+
+insert into Clientes(nome, email,telefone)
+  values ("Charles Froes", "bob@fainor.com.br"), '(077) 9999-9999');
