@@ -1,0 +1,1 @@
+update clientes set nome = 'João da Silva Albuquerque' where id = 1;
