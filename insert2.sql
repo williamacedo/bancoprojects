@@ -1,0 +1,1 @@
+insert into clientes (nome, cpf) values ('Ana', '666');

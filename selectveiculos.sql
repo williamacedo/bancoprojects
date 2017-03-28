@@ -1,0 +1,1 @@
+select * from veiculos v inner join clientes c on v.id_cliente = c.id;
