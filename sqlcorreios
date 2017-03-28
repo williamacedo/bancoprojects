@@ -1,0 +1,24 @@
+create database correios_db;
+
+create table Endereco(idRua int primary key auto_increment, logadouro varchar(255), cep decimal not null) engine = InnoDB default
+  charset=utf-8;
+
+create table Bairros(idBairro int primary key auto_increment,
+  nome varchar(255) not null) engine = InnoDB default
+  charset=utf-8;
+
+  create table Cidades(idCidade int primary key auto_increment,
+    nome varchar(255) not null unique) engine = InnoDB default
+    charset=utf-8;
+
+  create table Estados(sigla int primary key auto_increment,
+  nome varchar(50)) engine = InnoDB default
+  charset=utf-8;
+
+  insert into Endereco(logadouro)
+    values ("rua tal tal");
+  insert into Bairros(nome)
+    values("Candeias");
+  insert into Cidades(nome)
+    values ("conquista");
+  
